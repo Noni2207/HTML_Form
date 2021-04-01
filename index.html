@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="utf-8">
+    <title>Formular</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <form action="Formular.php" method="post" name="Formular" id="Formular">
+    <div class="wrapper">  
+     <header> 
+       <img src="images/ITA_logo.png" alt="ITA logo" width="472" height="120" class="img_center">
+       <p class="center"><strong>20__/21__</strong></p>   
+      </header> 
+     <div> 
+     <table>
+        <tr>
+         <th colspan="2">PERSONAL INFORMATION</th>
+        </tr>
+        <tr class="odd">
+         <td style="width:50%"><strong>SURNAME</strong> (father's or mother's name) <strong>and NAME</strong></td>
+         <td><strong>ID</strong> (personal number from the ID card)</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="surname_and_name" id="surname_and_name"></td>
+          <td><input type="text" name="ID" id="ID"></td>
+        </tr> 
+        <tr class="odd">
+         <td><strong>DATE OF BIRTH</strong></td>
+         <td><strong>PLACE OF BIRTH</strong></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="date_of_birth" id="date_of_birth"></td>
+          <td><input type="text" name="place_of_birth" id="place_of_birth"></td>
+        </tr>   
+      </table>
+      <table>
+          <tr>
+             <th colspan="3">MARK THE SQUARE NEXT TO THE NAME OF THE DIRECTION YOU ARE ENTERING</th>
+          </tr>
+          <tr class="odd left">
+              <td><label for="Programming">Programming</label><input type="checkbox" name="smer" id="Programming" value="Programming"></td>
+              <td><label for="Administration">Administration</label><input type="checkbox" name="smer" id="Administration" value="Administration"></td>
+              <td><label for="IT_Business">IT Business</label><input type="checkbox" name="smer" id="IT_Business" value="IT_Business"></td>
+          </tr>
+          <tr class="odd left">
+              <td><label for="Design">Design</label><input type="checkbox" name="smer" id="Design" value="Design"></td>
+              <td><label for="3D_Design_&amp;_CAD">3D Design &amp; CAD</label><input type="checkbox" name="smer" id="3D_Design_&amp;_CAD" value="3D_Design_&amp;_CAD"></td>
+              <td><label for="Mobile_Development">Mobile Development</label><input type="checkbox" name="smer" id="Mobile_Development" value="Mobile_Development"></td>
+          </tr>
+      </table>
+     <table>     
+        <tr>
+         <th colspan="3">PREVIOUSLY COMPLETED SCHOOL</th>
+        </tr>
+        <tr class="odd">
+         <td>Name of the school</td>
+         <td>Year of graduation</td>
+         <td>Place of completion of school</td>   
+        </tr>
+        <tr>
+          <td><input type="text" name="name_of_the_school" id="name_of_the_school"></td>
+          <td><input type="text" name="year_of_finishing_school" id="year_of_finishing_school"></td>
+          <td><input type="text" name="place_of_finishing_school" id="place_of_finishing_school"></td>
+        </tr>          
+        <tr class="odd">
+         <td>Foreign language learned in school</td>
+         <td colspan="2">Name of direction (profession)</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="foreign_language" id="foreign_language"></td>
+          <td colspan="2"><input type="text" name="direction_name" id="direction_name"></td>
+        </tr>            
+      </table>         
+      <table>         
+          <tr>
+             <th colspan="2">EDUCATION VARIANT (mark)</th>
+          </tr>         
+          <tr class="odd">
+              <td style="width:50%"><label for="Traditionally">Traditionally</label><input type="checkbox" name="school" id="Traditionally" value="Traditionally"></td>
+              <td><label for="On-line">On-line</label><input type="checkbox" name="school" id="On-line" value="On-line"></td>   
+          </tr>         
+          <tr>
+             <th colspan="2">STATUS OF PARTICIPANTS (mark)</th>
+          </tr>         
+         <tr class="odd">
+              <td colspan="2"><label for="Employed"><strong>Employed</strong></label><input type="checkbox" name="status" id="Employed" value="Employed"></td>
+          </tr>            
+          <tr class="odd">
+             <td>Company name</td>
+             <td>Workplace</td>
+          </tr>              
+          <tr>
+             <td><input type="text" name="company_name" id="company_name"></td>
+             <td><input type="text" name="work_place" id="work_place"></td> 
+          </tr>            
+          <tr class="odd">
+             <td>Phone</td>
+             <td>Address</td>
+          </tr>              
+          <tr>
+             <td><input type="text" name="phone" id="phone"></td>
+             <td><input type="text" name="address" id="address"></td> 
+          </tr>                        
+          <tr class="odd">
+              <td colspan="2"><label for="Unemployed"><strong>Unemployed</strong></label><input type="checkbox" name="status" id="Unemployed" value="Unemployed"></td>
+          </tr>              
+          <tr>
+             <th colspan="2">ADDRESS FROM IDENTITY CARD</th>
+          </tr>             
+          <tr class="odd">
+             <td>Place</td>
+             <td>Municipality</td>
+          </tr>         
+          <tr>
+             <td><input type="text" name="place" id="place"></td>
+             <td><input type="text" name="municipality" id="municipality"></td> 
+          </tr>            
+          <tr class="odd">
+             <td>Street and house number</td>
+             <td>E-mail adresa</td>
+          </tr>              
+          <tr>
+             <td><input type="text" name="steet" id="street"></td>
+             <td><input type="text" name="email" id="email"></td> 
+          </tr>               
+         <tr class="odd">
+             <td>Landline number</td>
+             <td>Mobile phone number</td>
+          </tr>              
+          <tr>
+             <td><input type="text" name="Landline_number" id="Landline_number"></td>
+             <td><input type="text" name="mobile" id="mobile"></td> 
+          </tr>            
+           <tr>
+             <th colspan="2">ADDRESS TO WHICH YOU WANT US TO SEND YOU DOCUMENTATION</th>
+          </tr>            
+           <tr class="odd">
+            <td>Place</td>
+            <td>Municipality</td>
+          </tr>         
+          <tr>
+             <td><input type="text" name="place1" id="place1"></td>
+             <td><input type="text" name="municipality1" id="municipality1"></td> 
+          </tr>            
+          <tr class="odd">
+             <td>Street and house number</td>
+             <td>Landline number</td>
+          </tr>              
+          <tr>
+             <td><input type="text" name="street1" id="street1"></td>
+             <td><input type="text" name="Landline_number1" id="Landline_number1"></td> 
+          </tr>                               
+         </table>     
+     </div>       
+         <p class="page">1</p>        
+         <br>     
+  </div> 
+ <div class="wrapper">      
+  <div>     
+   <table>   
+      <tr>
+         <th colspan="3">HOW DID YOU LEARN ABOUT THE ACADEMY? (add)</th>
+      </tr>   
+      <tr>
+         <td colspan="3"><textarea name="description1" id="description1" class="description"></textarea></td>
+      </tr>   
+      <tr>
+         <th colspan="3">WHAT ARE THE BASIC REASONS FOR YOU (E. G)?</th>
+      </tr>         
+      <tr class="odd left">
+         <td><label for="Foreign countries">Going abroad</label><input type="checkbox" name="reasons" id="Foreign countries" value="Foreign countries"></td>
+         <td><label for="Employment">Future employment</label><input type="checkbox" name="reasons" id="Employment" value="Employment"></td>
+         <td><label for="Foreign Diploma">Foreign Diploma </label><input type="checkbox" name="reasons" id="Foreign Diploma" value="Foreign Diploma"></td>
+      </tr>
+      <tr class="odd left">
+         <td style="background-color: #FFFFFF">Other (add)</td>
+         <td><label for="IT education">IT education</label><input type="checkbox" name="reasons" id="IT education" value="IT education"></td>
+         <td><label for="Advancement at work">Advancement at work</label><input type="checkbox" name="reasons" id="Advancement at work" value="Advancement at work"></td>
+      </tr>         
+      <tr>
+         <td colspan="3"><textarea name="description2" id="description2" class="description"></textarea></td>
+      </tr>      
+      <tr>
+         <th colspan="3">WHAT IS THE MAIN REASON FOR YOU DECIDING FOR THE ACADEMY?</th>
+      </tr>    
+      <tr class="odd left">
+         <td><label for="Modern">Modern approach and way of working</label><input type="checkbox" name="decisionIT" id="Modern" value="Modern"></td>
+         <td><label for="Recommendation">Recommendation</label><input type="checkbox" name="decisionIT" id="Recommendation" value="Recommendation"></td>
+         <td><label for="Offer">The entire offer</label><input type="checkbox" name="decisionIT" id="Offer" value="Offer"></td>
+      </tr>
+      <tr class="odd left">
+         <td style="background-color: #FFFFFF">Other (add)</td>
+         <td><label for="The price">The price</label><input type="checkbox" name="decisionIT" id="The price" value="The price"></td>
+         <td><label for="Commercials">Commercials</label><input type="checkbox" name="decisionIT" id="Commercials" value="Commercials"></td>
+      </tr>         
+      <tr>
+         <td colspan="3"><textarea name="description3" id="description3" class="description"></textarea></td>
+      </tr>      
+       <tr>
+         <th colspan="3">WHAT DO YOU LIKE THE MOST AND WHAT DO YOU LIKE THE LEAST? (add)</th>
+       </tr>      
+       <tr>
+         <td colspan="3"><textarea name="description4" id="description4" class="description"></textarea></td>
+       </tr>   
+       <tr>
+         <th colspan="3">WHICH OF THE DIRECTIONS AT THE IT ACADEMY IS STILL INTERESTING TO YOU?</th>
+       </tr>         
+       <tr class="odd left">
+         <td><label for="Programming1">Programming</label><input type="checkbox" name="interest direction" id="Programming1" value="Programming1"></td>
+         <td><label for="Administration1">Administration</label><input type="checkbox" name="interest direction" id="Administration1" value="Administration1"></td>
+         <td><label for="IT_Business1">IT Business</label><input type="checkbox" name="interest direction" id="IT_Business1" value="IT_Business1"></td>
+       </tr>
+       <tr class="odd left">
+         <td><label for="Design1">Design</label><input type="checkbox" name="interest direction" id="Design1" value="Design1"></td>
+         <td><label for="3D_Design_&amp;_CAD1">3D Design &amp; CAD</label><input type="checkbox" name="interest direction" id="3D_Design_&amp;_CAD1" value="3D_Design_&amp;_CAD1"></td>
+          <td><label for="Mobile_Development1">Mobile Development</label><input type="checkbox" name="interest direction" id="Mobile_Development1" value="Mobile_Development1"></td>
+       </tr>      
+     </table>     
+     <table>        
+       <tr>
+         <th colspan="2">DID YOU HAVE ENOUGH INFORMATION WHEN ENROLLING IN THE ACADEMY?</th>
+       </tr>      
+       <tr class="odd">
+         <td style="width:50%"><label for="Yes">Yes</label><input type="checkbox" name="info" id="yes" value="yes"></td>
+         <td><label for="ne">No</label><input type="checkbox" name="info" id="no" value="no"></td>  
+       </tr>         
+       <tr>
+         <th colspan="2">IS THERE A PLEASANT ATMOSPHERE IN THE OFFICES OF THE ACADEMY?</th>
+       </tr>      
+       <tr class="odd">
+         <td><label for="Yes1">Yes</label><input type="checkbox" name="atmosphere" id="yes1" value="yes1"></td>
+         <td><label for="No1">No</label><input type="checkbox" name="atmosphere" id="no1" value="no1"></td>  
+       </tr>        
+       <tr>
+         <td colspan="2"><input type="text" name="atm" id="atm"></td>
+       </tr>         
+       <tr class="odd">
+          <td colspan="2">Note</td>
+       </tr>        
+       <tr>
+         <td colspan="2"><textarea name="description5" id="description5" class="description"></textarea></td>
+       </tr>      
+   </table>      
+ </div>    
+ <div class="images">   
+     <div class="logo">
+       <img src="images/ITA_logo_3.png" alt="logo">
+     </div>   
+     <div class="logo1">
+       <img src="images/Cambrige_3.png" alt="logo">
+     </div>    
+ </div>    
+   <footer>  
+       <div class="location1">
+              <p>Norway :<br>
+                    Frydebergveien 34, 1559, Oslo<br>
+                    +47 5546463736377, +47 53649937399328</p>
+                <p> Lileveien 5, 1338 Bærum<br>
+                  +47 5546463736377, +47 53649937399328</p>
+       </div>     
+       <div class="location2">
+              <p>US :<br>
+                    Lincoln-Strabe 25, 87953, Posemuckel<br>
+                    +49 7345527 7366435, +49 7345527 7366435</p>
+                <p>Londoner Weg 25, 875463 Porteliste<br>
+                    +49 53445 7589564</p>
+       </div>       
+       <br>      
+       <p class="clear"><strong>office@it-//////.com * www.it-//////.com</strong></p>    
+   </footer>    
+     <p class="page">2</p>         
+         <br>    
+ </div>       
+</form>    
+</body>   
+</html>
